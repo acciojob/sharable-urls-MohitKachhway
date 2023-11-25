@@ -5,7 +5,7 @@ function fun(event){
     event.preventDefault();
     let name = document.getElementById("name").value;
     let year = document.getElementById("year").value;
-    let heading =document.querySelector("h3");
+    let heading =document.getElementById("url");
     if(name&&year){
         heading.innerText= `https://localhost:8080/?name=${name}&year=${year}`
     }else if(name){
